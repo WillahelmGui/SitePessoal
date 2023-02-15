@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap');
 
 *{
 margin: 0;
@@ -16,7 +17,7 @@ body{
     color:green;
 }
 .apresentacao{
-    margin:10%;
+    margin: 10% 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -30,6 +31,9 @@ body{
 .apresentacao__conteudo{
     max-width:615px;
     max-height:315px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 .apresentacao__conteudo__titulo{
     font-size: 36px;
@@ -38,4 +42,19 @@ body{
 .apresentacao__conteudo__texto{
     font-size:  24px;
     font-family: 'Cormorant SC', serif;
+}
+.apresentacao__botoes{
+    display: flex;
+    justify-content: space-between;
+}
+.apresentacao__botoes__link{
+    background-color: green;
+    width: 170px;
+    text-align: end;
+    padding: 21.5px 15px;
+    border-radius: 16px;
+    color: white;
+    text-decoration: none;
+    font-weight:600;
+    font-family: 'Montserrat', sans-serif;
 }
